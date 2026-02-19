@@ -1,10 +1,8 @@
 package com.vmtecnologia.test.userapi.service;
 
-import com.vmtecnologia.test.userapi.dto.UserDTO;
 import com.vmtecnologia.test.userapi.model.User;
 import com.vmtecnologia.test.userapi.repository.UserRepository;
 import jakarta.transaction.Transactional;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
@@ -44,12 +42,5 @@ public class UserService {
                 .orElseThrow(() ->
                         new ResponseStatusException(HttpStatus.NOT_FOUND, "User not found"));
     }
-
-
-
-
-
-
-
 
 }
